@@ -4,8 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AudioQueueServiceDemo.xcscheme</key>
+		<key>Player.xcscheme</key>
 		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Recorder.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -13,6 +20,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>A50AE8241D51E48D004C7201</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A50AE8321D51E4A6004C7201</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A50AE83D1D51F03F004C7201</key>
 		<dict>
 			<key>primary</key>
 			<true/>

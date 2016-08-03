@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A50AE8291D51E48D004C7201 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A50AE8281D51E48D004C7201 /* main.m */; };
+		A50AE8361D51E4A6004C7201 /* Recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = A50AE8351D51E4A6004C7201 /* Recorder.m */; };
+		A50AE8411D51F03F004C7201 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A50AE8401D51F03F004C7201 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A50AE8231D51E48D004C7201 /* CopyFiles */ = {
+		A50AE8311D51E4A6004C7201 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A50AE83C1D51F03F004C7201 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +33,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A50AE8251D51E48D004C7201 /* AudioQueueServiceDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AudioQueueServiceDemo; sourceTree = BUILT_PRODUCTS_DIR; };
-		A50AE8281D51E48D004C7201 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A50AE8331D51E4A6004C7201 /* Recorder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Recorder; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50AE8351D51E4A6004C7201 /* Recorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Recorder.m; sourceTree = "<group>"; };
+		A50AE83E1D51F03F004C7201 /* Player */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Player; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50AE8401D51F03F004C7201 /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A50AE8221D51E48D004C7201 /* Frameworks */ = {
+		A50AE8301D51E4A6004C7201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50AE83B1D51F03F004C7201 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				A50AE8271D51E48D004C7201 /* AudioQueueServiceDemo */,
+				A50AE8341D51E4A6004C7201 /* Recorder */,
+				A50AE83F1D51F03F004C7201 /* Player */,
 				A50AE8261D51E48D004C7201 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,7 +70,8 @@
 		A50AE8261D51E48D004C7201 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A50AE8251D51E48D004C7201 /* AudioQueueServiceDemo */,
+				A50AE8331D51E4A6004C7201 /* Recorder */,
+				A50AE83E1D51F03F004C7201 /* Player */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,29 +79,61 @@
 		A50AE8271D51E48D004C7201 /* AudioQueueServiceDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A50AE8281D51E48D004C7201 /* main.m */,
 			);
 			path = AudioQueueServiceDemo;
+			sourceTree = "<group>";
+		};
+		A50AE8341D51E4A6004C7201 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				A50AE8351D51E4A6004C7201 /* Recorder.m */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		A50AE83F1D51F03F004C7201 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				A50AE8401D51F03F004C7201 /* Player.m */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A50AE8241D51E48D004C7201 /* AudioQueueServiceDemo */ = {
+		A50AE8321D51E4A6004C7201 /* Recorder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A50AE82C1D51E48D004C7201 /* Build configuration list for PBXNativeTarget "AudioQueueServiceDemo" */;
+			buildConfigurationList = A50AE8371D51E4A6004C7201 /* Build configuration list for PBXNativeTarget "Recorder" */;
 			buildPhases = (
-				A50AE8211D51E48D004C7201 /* Sources */,
-				A50AE8221D51E48D004C7201 /* Frameworks */,
-				A50AE8231D51E48D004C7201 /* CopyFiles */,
+				A50AE82F1D51E4A6004C7201 /* Sources */,
+				A50AE8301D51E4A6004C7201 /* Frameworks */,
+				A50AE8311D51E4A6004C7201 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AudioQueueServiceDemo;
-			productName = AudioQueueServiceDemo;
-			productReference = A50AE8251D51E48D004C7201 /* AudioQueueServiceDemo */;
+			name = Recorder;
+			productName = Recorder;
+			productReference = A50AE8331D51E4A6004C7201 /* Recorder */;
+			productType = "com.apple.product-type.tool";
+		};
+		A50AE83D1D51F03F004C7201 /* Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50AE8421D51F03F004C7201 /* Build configuration list for PBXNativeTarget "Player" */;
+			buildPhases = (
+				A50AE83A1D51F03F004C7201 /* Sources */,
+				A50AE83B1D51F03F004C7201 /* Frameworks */,
+				A50AE83C1D51F03F004C7201 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Player;
+			productName = Player;
+			productReference = A50AE83E1D51F03F004C7201 /* Player */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -91,7 +145,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = brownfeng;
 				TargetAttributes = {
-					A50AE8241D51E48D004C7201 = {
+					A50AE8321D51E4A6004C7201 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A50AE83D1D51F03F004C7201 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -108,17 +165,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A50AE8241D51E48D004C7201 /* AudioQueueServiceDemo */,
+				A50AE8321D51E4A6004C7201 /* Recorder */,
+				A50AE83D1D51F03F004C7201 /* Player */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A50AE8211D51E48D004C7201 /* Sources */ = {
+		A50AE82F1D51E4A6004C7201 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50AE8291D51E48D004C7201 /* main.m in Sources */,
+				A50AE8361D51E4A6004C7201 /* Recorder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50AE83A1D51F03F004C7201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50AE8411D51F03F004C7201 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,14 +272,28 @@
 			};
 			name = Release;
 		};
-		A50AE82D1D51E48D004C7201 /* Debug */ = {
+		A50AE8381D51E4A6004C7201 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		A50AE82E1D51E48D004C7201 /* Release */ = {
+		A50AE8391D51E4A6004C7201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A50AE8431D51F03F004C7201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A50AE8441D51F03F004C7201 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -232,11 +312,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A50AE82C1D51E48D004C7201 /* Build configuration list for PBXNativeTarget "AudioQueueServiceDemo" */ = {
+		A50AE8371D51E4A6004C7201 /* Build configuration list for PBXNativeTarget "Recorder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A50AE82D1D51E48D004C7201 /* Debug */,
-				A50AE82E1D51E48D004C7201 /* Release */,
+				A50AE8381D51E4A6004C7201 /* Debug */,
+				A50AE8391D51E4A6004C7201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A50AE8421D51F03F004C7201 /* Build configuration list for PBXNativeTarget "Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50AE8431D51F03F004C7201 /* Debug */,
+				A50AE8441D51F03F004C7201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
