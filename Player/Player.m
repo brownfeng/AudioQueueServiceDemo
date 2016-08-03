@@ -143,13 +143,14 @@ int main(int argc, const char * argv[]) {
         }
         
         
-//        Float32 gain = 1.0;
-//        // Optionally, allow user to override gain setting here
-//        AudioQueueSetParameter (
-//                                aqData.mQueue,
-//                                kAudioQueueParam_Volume,
-//                                gain
-//                                );
+        Float32 gain = 10.0;
+        
+        // Optionally, allow user to override gain setting here
+        AudioQueueSetParameter (
+                                aqData.mQueue,
+                                kAudioQueueParam_Volume,
+                                gain
+                                );
         
         
         //Start and Run an Audio Queue
